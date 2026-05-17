@@ -9,6 +9,7 @@ pages:
  |-TC_01_ViewDetailBook.js
 
 We focus on 3 main functions for automation testing:
+
 1/ Guest: View a detail Book
 - visit link: http://localhost/obs/ successful
 - select random a book displaying on the web application
@@ -43,6 +44,7 @@ We focus on 3 main functions for automation testing:
 - fill the Administrator account 
 - click on Submit button
 -> Verify the Login is successful (Logout link is displayed on the Top Menu)
+  
 a/ Add a new book
 - Click on Add New Book link on the Top Menu
 - Fill the Book's information 
@@ -50,6 +52,7 @@ a/ Add a new book
 -> Verify 
  + The message is displayed: "New Book has been added successfully"
  + the Book is added successful into a Book List
+
 b/ Update the book's information
 - on the Book List screen, click on Edit button at Action column of a random book
 -> Verify the book's information is displayed correctly
@@ -58,6 +61,7 @@ b/ Update the book's information
 -> Verify 
  + The message is displayed: "Book Details has been updated successfully"
  + the Book is added successful into a Book List with the updated information
+
 c/ Delete a book
 - on the Book List screen, click on Delete button at Action column of a random book
 - click OK button on the Popup
