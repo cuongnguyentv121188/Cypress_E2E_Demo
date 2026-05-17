@@ -2,13 +2,18 @@ My local web aplication is a Online Book Store with lots of functions allowing c
 
 
 Using POM model.
+pages:
+ |-indexPage.js 
+ |-bookDetails.js
+ tests
+ |-TC_01_ViewDetailBook.js
 
 We focus on 3 main functions for automation testing:
 1/ Guest: View a detail Book
 - visit link: http://localhost/obs/ successful
 - select random a book displaying on the web application
 - the detail information of the book is displayed 
--> Verify the information is correct + Purchase / Add to cart button is displayed
+-> Verify the breadcrumb, book title are correct + Purchase / Add to cart button is visible
 
 
 2/ Guest: Purchase a Book
