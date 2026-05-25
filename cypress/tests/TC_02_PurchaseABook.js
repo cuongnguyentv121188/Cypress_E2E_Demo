@@ -8,6 +8,7 @@ describe('Purchase a book successful', () => {
     it('should be able to purchase a book', () => {
        
         //TC_01:
+        //cy.wait(2000);
         cy.visit('http://localhost/obs/');
         let expectedTitle = "";
         let expectedPrice = 0;
@@ -181,7 +182,12 @@ describe('Purchase a book successful', () => {
         //-> Verify the purchase is completely by displaying the message:
         //"Your order has been processed sucessfully. We'll be reaching you out to confirm your order. Thanks!""
         cy.url().should('include','process.php');
-        cy.contains("Your order has been processed sucessfully. We'll be reaching you out to confirm your order. Thanks!").should('be.visible');
+        cy.contains("Your order has been processed sucessfully. We'll be reaching you out to confirm your order. Thanks!")
+            .should('be.visible')
+                .then($el => {
+                    const text = $el.text().trim();
+                    expect(text).to.contain("Your order has been processed sucessfully. We'll be reaching you out to confirm your order. Thanks!");
+                })
         //cy.get('body').should('contain.text', "Your order has been processed sucessfully");
     });
 });

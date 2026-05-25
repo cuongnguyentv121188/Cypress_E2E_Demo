@@ -100,11 +100,10 @@ project/
 # 3. Admin: Add, Update, Delete a Book
 
 ## Admin Login
-1. Visit homepage  
-2. Click Login as Admin  
-3. Enter admin credentials  
-4. Click Submit  
-5. Verify Logout link is displayed  
+1. Visit Login page
+2. Enter admin credentials  
+3. Click Submit  
+4. Verify Logout link is displayed  
 
 ---
 
@@ -120,10 +119,9 @@ project/
 ---
 
 ## b. Update a Book
-1. In Book List, click Edit on a random book  
-2. Verify book information is displayed  
-3. Update fields  
-4. Click Update  
+1. In Book List, click Edit on a created book  
+2. Update fields  
+3. Click Update  
 
 ### Expected
 - Message: "Book Details has been updated successfully"  
@@ -132,11 +130,11 @@ project/
 ---
 
 ## c. Delete a Book
-1. In Book List, click Delete on a random book  
+1. In Book List, click Delete on a updated book  
 2. Confirm popup  
 
 ### Expected
-- Book is removed from the list  
+- Book is removed from the list    
 
 ---
 
@@ -146,8 +144,10 @@ project/
 ```
 yarn test
 ```
-
----
+## Install file-upload package
+```
+npm install --save-dev cypress-file-upload
+```
 
 # Configuration (cypress.config.js)
 ```
