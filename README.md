@@ -25,6 +25,11 @@ project/
  │    │     ├── checkOut.js
  │    │     ├── purchaseBook.js
  │    │     └── adminPage.js
+ │    │     └── adminBook.js
+ │    │     └── adminAddBook.js
+ │    │     └── adminEditBook.js
+ │    ├── images/
+ │    │     ├── coloring_kids.jpg
  │    ├── demo_videos/
  │    │     ├── TC_02.gif
  │    │     ├── TC_03.gif
