@@ -25,6 +25,8 @@ project/
  │    │     ├── checkOut.js
  │    │     ├── purchaseBook.js
  │    │     └── adminPage.js
+ │    ├── demo_videos/
+ │    │     ├── TC_02.gif
  │    ├── fixtures/
  │    └── support/
  │          ├── commands.js
