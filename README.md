@@ -10,31 +10,31 @@ pages:
 
 We focus on 3 main functions for automation testing:
 
-1/ Guest: View a detail Book
-- visit link: http://localhost/obs/ successful
-- select random a book displaying on the web application
-- the detail information of the book is displayed 
+1.1 visit link: http://localhost/obs/ successful
+1.2 select random a book displaying on the web application
+1.3 the detail information of the book is displayed 
 -> Verify the breadcrumb, book title are correct + Purchase / Add to cart button is visible
 
 
 2/ Guest: Purchase a Book
-- visit link: http://localhost/obs/ successful
-- select random a book displaying on the web application
-- the detail information of the book is displayed 
--> Verify the information is correct + Purchase / Add to cart button is displayed
-- click on Purchase / Add to cart button
-- change to Quantity
+    TC_01
+        1.1 visit link: http://localhost/obs/ successful
+        1.2 select random a book displaying on the web application
+        1.3 the detail information of the book is displayed 
+        -> Verify the breadcrumb, book title are correct + Purchase / Add to cart button is visible
+---> TC_01 is verified 
+2.1 click on Purchase / Add to cart button
+-> Verify correct url, book title, price, total, Summary
+2.2 change the value of Quantity
 - Click on Save Changes button  
--> Verify the Total is changed properly
-- click on Go To Checkout button
+-> Verify the Total is changed properly, Summary is updated
+2.3 click on Go To Checkout button (Skip verification of Cart information because it is duplicated with 2.2)
 - Fill the customer's information form completely
 - Click on Purchase button 
--> Verify:
- + the Quantity is correct
- + the Total is changed by adding Shipping fee properly
-- Fill the Payment form completely
+2.4 Verify the Total including shipping (+20.00)
+2.5 Fill the Payment form completely
 - Click on Purchase button
--> Verify the purchase is completely by displaying the message:
+-> Verify the purchase is completely by displaying the message -> should be visible
 "Your order has been processed sucessfully. We'll be reaching you out to confirm your order. Thanks!""
 
 
